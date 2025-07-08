@@ -1,6 +1,16 @@
-#docker image created from docker file    -> docker buildx build -t afzal-go .
+# 🐳 Docker Commands for Go App
 
-#run the image, container will be created -> docker run -p 8080:8080 -it afzal-go
+```bash
+# Create Docker image    
+docker build -t afzal-go .
 
-#see the running/stoped containers        -> docker ps -a
+# Run the image, container will be created
+docker run --name mycontainer -p 8080:8080 -it afzal-go
+
+# List of images 
+docker images
+
+# See the running/stopped containers 
+docker ps -a
+
 
